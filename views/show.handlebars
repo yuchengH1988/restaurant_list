@@ -32,9 +32,15 @@
         {{restaurant.phone}}
       </p>
 
-      <p class="mb-5">
+      <p class="mb-1">
         {{restaurant.description}}
       </p>
+
+      <a href="/" class="btn btn-link float-right mb-5"><i class="fas fa-home"></i>Back
+      </a>
+
+      <a href="/restaurants/{{restaurant._id}}/edit" class="btn btn-link float-right mb-5"><i
+          class="fas fa-edit"></i>Edit</a>
 
       <img class="rounded mx-auto d-block mb-4 w-100" src="{{restaurant.image}}" alt="{{restaurant.name}}"
         style="max-width: 600px;">

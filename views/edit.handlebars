@@ -1,0 +1,53 @@
+<h1 class="text-center mt-2">編輯餐廳</h1>
+<form action="/restaurants/{{restaurant._id}}/edit" method="POST" class="mx-auto mt-3" style="width:80%;">
+  <div class="mb-3 d-flex">
+    <label for="inputName" class="form-label mr-2 text-center">餐廳名稱</label>
+    <input type="text" class="form-control" id="inputName" name="name" style="width:70%; height:30px"
+      value="{{restaurant.name}}">
+  </div>
+  <div class="mb-3 d-flex">
+    <label for="inputEngName" class="form-label mr-2 text-center">英文名稱</label>
+    <input type="text" class="form-control" id="inputEngName" name="name_eng" style="width:70%; height:30px"
+      value="{{restaurant.name_eng}}">
+  </div>
+  <div class="mb-3 d-flex">
+    <label for="inputCatogory" class="form-label mr-2 text-center">料理類別</label>
+    <input type="text" class="form-control" id="inputCatogory" name="category" style="width:70%; height:30px"
+      value="{{restaurant.category}}">
+  </div>
+  <div class="mb-3 d-flex">
+    <label for="inputImage" class="form-label mr-2 text-center">圖片連結</label>
+    <input type="text" class="form-control" id="inputImage" name="image" style="width:70%; height:30px"
+      value="{{restaurant.image}}">
+  </div>
+  <div class="mb-3 d-flex">
+    <label for="inputAddress" class="form-label mr-2 text-center">地址</label>
+    <input type="text" class="form-control" id="inputAddress" name="location" style="width:70%; height:30px"
+      value="{{restaurant.location}}">
+  </div>
+  <div class="mb-3 d-flex">
+    <label for="inputPhone" class="form-label mr-2 text-center">聯絡電話</label>
+    <input type="text" class="form-control" id="inputPhone" name="phone" style="width:70%; height:30px"
+      value="{{restaurant.phone}}">
+  </div>
+  <div class="mb-3 d-flex">
+    <label for="google_map" class="form-label mr-2 text-center">GoogleMap Link:</label>
+    <input type="number" class="form-control" id="google_map" name="google_map" style="width:70%; height:30px"
+      value="{{restaurant.google_map}}">
+  </div>
+  <div class="mb-3 d-flex">
+    <label for="rating" class="form-label mr-2 text-center">評分</label>
+    <input type="number" class="form-control" id="rating" name="rating" placeholder="0.0~5.0" step="0.1" min="0" max="5"
+      style="width:70%; height:30px" value="{{restaurant.rating}}">
+  </div>
+  <div class="mb-3 d-flex">
+    <label for="description" class="form-label mr-2 text-center">描述你的經驗</label>
+    <input type="text" class="form-control" id="description" name="description" style="width:70%; height:30px"
+      value="{{restaurant.description}}">
+  </div>
+
+  <button type="submit" class="btn btn-primary">SAVE</button>
+  <a href="/">
+    <button type="button" class="btn btn-warning ml-3">Back</button>
+  </a>
+</form>
